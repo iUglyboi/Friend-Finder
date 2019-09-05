@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend Finder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+</head>
+<style>
+body{
+    background-color: red;
+}
+h1, h2, h3, h4{
+    color: black
+}
+a{
+        color: black
+    }
+#submit{
+    background-color: black;
+    color: red
+}
+</style>
+<body>
+    <div class = "container">
+        <h1>Survey Questions</h1>
+        <br>
+        <br>
+        <h2><b>About You</b></h2>
+        <h3>Name (Required)</h3>
+        <input type="text" id="name" class="form-control" required>
+
+        <h4>Link to Photo Image (Required)</h4>
+        <input type="text" id="photo" class="form-control" required>
+        <br>
+        <br>
+        <h2>
+            <b>Question 1</b>
+        </h2>
+        <h3>You're an adventure! Always ready for travel!</h3>
+        <select class="chosen-select" id="q1">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h2>
+            <b>Question 2</b>
+        </h2>
+        <h3>You feel more comfortable in group activities or hangouts.</h3>
+        <select class="chosen-select" id="q2">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h2>
+            <b>Question 3</b>
+        </h2>
+        <h3>You are a very hard person to upset usually.</h3>
+        <select class="chosen-select" id="q3">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h2>
+            <b>Question 4</b>
+        </h2>
+        <h3>Weed should be legal.</h3>
+        <select class="chosen-select" id="q4">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h2>
+            <b>Question 5</b>
+        </h2>
+        <h3>You'd rather have a chill night at home then go out and party.</h3>
+        <select class="chosen-select" id="q5">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h2>
+            <b>Question 6</b>
+        </h2>
+        <h3>Dogs are always better than cats.</h3>
+        <select class="chosen-select" id="q6">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h2>
+            <b>Question 7</b>
+        </h2>
+        <h3>Chick-fil-a is better than popeyes...</h3>
+        <select class="chosen-select" id="q7">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h2>
+            <b>Question 8</b>
+        </h2>
+        <h3>Chris is a dope ass dude.</h3>
+        <select class="chosen-select" id="q8">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h2>
+            <b>Question 9</b>
+        </h2>
+        <h3>Do you believe Donald Trump is the spawn of Satan?</h3>
+        <select class="chosen-select" id="q9">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h2>
+            <b>Question 10</b>
+        </h2>
+        <h3>Are you hungry all the time?</h3>
+        <select class="chosen-select" id="q10">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+            Submit</button>
+            
+            <hr>
+            <footer class="footer">
+                <div class="container">
+                    <p>
+                        <a href="/api/friends">API Friends List</a> |
+                        <a href="https://github.com/RyanOliverSotto/FriendFinder" target="_blank">GitHub Repo</a>
+                    </p>
+                </div>
+            </footer>
+    
+        </div>
+        <div id="results-modal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                        <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h2 class="modal-title">
+                                        <b>Best Match!</b>
+                                    </h2>
+                                    </div>
+                                    <div class = "model-body">
+                                        <h2 id = "matches-name"></h2>
+                                        <!-- help getting matches image into the modal box pop up bootstrap -->
+                                        <img id= "matches-pic">
+                                    </div>
+                                    <div class = "modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                             
+                                    </div>
+
+
+
+                                    </div>
+    
+
+    </div>
+</body>
+</html>
