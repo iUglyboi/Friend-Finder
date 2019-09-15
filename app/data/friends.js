@@ -34,7 +34,7 @@ var friends = [
 {
     name: "Biggie Smalls",
     photo: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.complex.com%2Fcomplex%2Fimages%2Fc_limit%2Cdpr_auto%2Cq_90%2Cw_720%2Ffl_lossy%2Cpg_1%2Fwsqfoft4mwwjk71qmvic%2Fbiggie&imgrefurl=https%3A%2F%2Fwww.complex.com%2Fmusic%2F2017%2F03%2Fhow-hip-hop-would-be-different-if-the-notorious-big-were-alive&docid=HXQrVfYHXkOfZM&tbnid=P9Jc7p0JexOEJM%3A&vet=10ahUKEwivp8HntLrkAhVNb60KHRuXAH4QMwh8KAEwAQ..i&w=680&h=440&bih=744&biw=1440&q=Biggie&ved=0ahUKEwivp8HntLrkAhVNb60KHRuXAH4QMwh8KAEwAQ&iact=mrc&uact=8",
-    score: [
+    scores: [
         "3",
         "1",
         "4",
